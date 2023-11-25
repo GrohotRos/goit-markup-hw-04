@@ -320,7 +320,6 @@ button {
     display: flex;
     gap: 24px;
     align-items: center;
-    justify-content: center;
 }
 
 .social-list-item {
@@ -410,6 +409,10 @@ button {
     max-width: 264px;
     display: flex;
     justify-content: flex-start;
+}
+
+.page-bottom-container {
+    display: flex;
 }
 
 .title-socmedia {
