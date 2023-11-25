@@ -102,6 +102,23 @@ button {
     color: #2e2f42;
 }
 
+.current {
+    position: relative;
+    color: #404BBF;
+}
+
+.menu-header .current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color:#404BBF;
+}
+
 .menu-link {
     display: block;
     color: #2e2f42;
@@ -149,6 +166,9 @@ button {
     width: 1440px;
     margin: 0 auto;
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70) , rgba(46, 47, 66, 0.70)), url(../images/title-page/people-office\ 1.jpg);
+    background-size: cover;
+
 }
 
 .title {
@@ -208,6 +228,7 @@ button {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 
@@ -217,6 +238,17 @@ button {
 
 .benefits-item {
     width: calc((100% - 3 * 24px) / 4);
+}
+
+.benefits-icon-page {
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-page {
@@ -284,6 +316,32 @@ button {
     letter-spacing: 0.02em;
 }
 
+.social-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-list-item {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+}
+
+.social-list-link {
+    display: block;
+    line-height: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-list-icon {
+    fill: "#f4f4fd";
+}
 /* ========== section 4 ========== */
 
 .portfolio-title {
@@ -352,4 +410,8 @@ button {
     max-width: 264px;
     display: flex;
     justify-content: flex-start;
+}
+
+.title-socmedia {
+    margin-bottom: 16px;
 }
