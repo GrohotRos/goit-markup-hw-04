@@ -403,7 +403,8 @@ button {
     transform: translateY(100%);
     transition: transform 250ms linear;
 }
-.portfolio-list-item:hover .overlay{
+
+.portfolio-list-item:hover .overlay {
     transform: translateY(0%);
 }
 
@@ -430,6 +431,7 @@ button {
     margin-right: 120px;
     flex-direction: column;
 }
+
 .logo-bottom {
     color: #F4F4FD;
 }
