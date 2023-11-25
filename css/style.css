@@ -326,20 +326,21 @@ button {
     display: flex;
     width: 40px;
     height: 40px;
-    background-color: #4D5AE5;
-    border-radius: 50%;
 }
 
 .social-list-link {
-    display: block;
-    line-height: 0;
+    display: flex;
     width: 100%;
-    align-items: center;
+    height: 100%;
+    background-color: #4D5AE5;
     justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    line-height: 0;
 }
 
 .social-list-icon {
-    fill: "#f4f4fd";
+    fill: #F4F4FD;
 }
 
 /* ========== section 4 ========== */
@@ -384,6 +385,28 @@ button {
     letter-spacing: 0.02em;
 }
 
+.hidden-text {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    padding: 40px 32px;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+}
+.portfolio-list-item:hover .overlay{
+    transform: translateY(0%);
+}
+
 /* ========== FOOTER ========== */
 
 .page-bottom {
@@ -393,8 +416,20 @@ button {
     margin: 0 auto;
     display: flex;
     padding: 100px 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.page-footer-container {
+    display: flex;
+}
+
+.page-bottom-container {
+    display: flex;
+    max-width: 50%;
+    margin-right: 120px;
+    flex-direction: column;
+}
 .logo-bottom {
     color: #F4F4FD;
 }
@@ -408,15 +443,19 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    display: flex;
-    justify-content: flex-start;
 }
 
-.page-bottom-container {
+.social-bottom-container {
     display: flex;
+    flex-direction: column;
 }
 
 .title-socmedia {
     margin-bottom: 16px;
     font-weight: 500;
+}
+
+.footer-list-item:hover .social-list-link {
+    background-color: #31D0AA;
+    transition: background-color 250ms linear;
 }
