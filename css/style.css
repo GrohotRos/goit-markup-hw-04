@@ -343,11 +343,11 @@ button {
     line-height: 0;
 }
 
-.social-list-item:hover .social-list-link {
+.personnel-page-link:hover {
     background-color: #404bbf;
 }
 
-.social-list-item:focus .social-list-link {
+.personnel-page-link:focus {
     background-color: #404bbf;
 }
 
@@ -480,12 +480,12 @@ button {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-list-item:hover .social-list-link {
+.footer-list-link:hover {
     background-color: #31D0AA;
     transition: background-color 250ms linear;
 }
 
-.footer-list-item:focus .social-list-link {
+.footer-list-link:focus .social-list-link {
     background-color: #31D0AA;
     transition: background-color 250ms linear;
 }
