@@ -263,8 +263,6 @@ button {
 
 .personnel-page {
     background-color: #F4F4FD;
-    width: 1440px;
-    margin: 0 auto;
 }
 
 .team-title {
@@ -303,7 +301,6 @@ button {
 
 .team-list {
     text-align: center;
-    margin-bottom: 8px;
     color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
@@ -390,7 +387,6 @@ button {
 }
 
 .projects-list {
-    margin-bottom: 8px;
     color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
@@ -430,9 +426,6 @@ button {
 .page-bottom {
     background-color: #2E2F42;
     color: #F4F4FD;
-    width: 1440px;
-    margin: 0 auto;
-    display: flex;
     padding: 100px 0;
     justify-content: space-between;
 }
